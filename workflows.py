@@ -467,9 +467,9 @@ def workflow_buy(ticker: str, dry_run: bool = False) -> bool:
 
     print(f"💸 BUY → {ticker}")
     if _ensure_open(WB_WINDOW, WB_LAUNCH):
-        import time
-        time.sleep(0.4)
-        _pyautogui.hotkey("shift", "b")
+        # import time
+        # time.sleep(0.4)
+        # _pyautogui.hotkey("shift", "b")
         print(f"   ✅ BUY (Shift+B) sent for {ticker}")
         return True
     print(f"   ❌ BUY failed — could not open Webull Desktop")
@@ -483,9 +483,9 @@ def workflow_sell_all(ticker: str, dry_run: bool = False) -> bool:
 
     print(f"🔴 SELL ALL → {ticker}")
     if _ensure_open(WB_WINDOW, WB_LAUNCH):
-        import time
-        time.sleep(0.4)
-        _pyautogui.hotkey("shift", "a")
+        # import time
+        # time.sleep(0.4)
+        # _pyautogui.hotkey("shift", "a")
         print(f"   ✅ SELL ALL (Shift+A) sent for {ticker}")
         return True
     print(f"   ❌ SELL failed — could not open Webull Desktop")
